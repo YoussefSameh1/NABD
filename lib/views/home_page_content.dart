@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:nabd_app/views/add_medicine_view.dart';
+import 'package:nabd_app/views/my_notifi_view.dart';
 import 'package:nabd_app/widgets/custom_floating_button.dart';
 import 'package:nabd_app/widgets/home_body_item_card.dart';
 
@@ -17,10 +16,17 @@ class HomePageContent extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xff8677C8),
         elevation: 0,
-        actions: const [
+        actions: [
           Padding(
             padding: EdgeInsets.all(8.0),
-            child: Icon(Icons.notifications, color: Colors.white),
+            child: IconButton(
+              icon: Icon(Icons.notifications, color: Colors.white),
+              onPressed: () {
+                Navigator.of(
+                  context,
+                ).push(MaterialPageRoute(builder: (context) => MyNotifiView()));
+              },
+            ),
           ),
         ],
       ),
@@ -35,7 +41,7 @@ class HomePageContent extends StatelessWidget {
             ),
           ),
 
-          HomeBodyItemCard(),
+          Expanded(child: HomeBodyItemCard()),
         ],
       ),
     );

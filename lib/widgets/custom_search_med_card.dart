@@ -16,12 +16,12 @@ class CustomSearchMedCard extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
-            mainAxisSize: MainAxisSize.min, // الكارد يتوسع حسب محتواه
+            mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const FaIcon(
                 FontAwesomeIcons.pills,
-                size: 60, // كبر الأيقونة شوي
+                size: 60,
                 color: Color(0xff5AD2E2),
               ),
               const SizedBox(height: 12),
@@ -54,7 +54,7 @@ class CustomSearchMedCard extends StatelessWidget {
               const SizedBox(height: 12),
               SizedBox(
                 width: double.infinity,
-                child: CustombookButton(text: 'Book'), // الزر ياخد عرض الكارد
+                child: CustombookButton(text: 'Book'),
               ),
             ],
           ),
