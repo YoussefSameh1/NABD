@@ -15,7 +15,7 @@ class CustomFloatingButton extends StatelessWidget {
           MaterialPageRoute(builder: (context) => const AddMedicinePage()),
         );
       },
-      child: const Icon(color: Colors.white, Icons.add, size: 45),
+      child: const Icon(color: Colors.white, Icons.add, size: 35),
     );
   }
 }
