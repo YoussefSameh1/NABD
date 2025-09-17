@@ -14,11 +14,11 @@ class EditProfileViewBody extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(height: 80),
-          CustomTextField(hint: 'hagar emad', label: 'Name'),
+          CustomTextField(hint: 'hagar emad', label: 'Name', inputType: TextInputType.name),
           const SizedBox(height: 20),
-          CustomTextField(hint: '01096832103', label: 'Phone Number'),
+          CustomTextField(hint: '01096832103', label: 'Phone Number', inputType: TextInputType.phone),
           const SizedBox(height: 20),
-          CustomTextField(hint: 'hajarghonim19@gmail', label: 'Email'),
+          CustomTextField(hint: 'hajarghonim19@gmail', label: 'Email', inputType: TextInputType.emailAddress),
           const SizedBox(height: 20),
           CustomTextField(hint: '************', label: 'Password', isobscure: true),
           const SizedBox(height: 10),

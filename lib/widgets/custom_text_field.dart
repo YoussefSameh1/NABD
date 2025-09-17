@@ -7,10 +7,12 @@ class CustomTextField extends StatelessWidget {
     required this.label,
     this.hint = '',
     this.isobscure = false,
+    this.inputType = TextInputType.text,
   });
 
-  final String hint;
   final String label;
+  final TextInputType inputType;
+  final String hint;
   final bool isobscure;
 
   @override
@@ -34,6 +36,7 @@ class CustomTextField extends StatelessWidget {
           TextField(
             obscureText: isobscure,
             obscuringCharacter: '*',
+            keyboardType: inputType,
             decoration: InputDecoration(
               enabledBorder: const OutlineInputBorder(
                 borderRadius: BorderRadius.all(Radius.circular(32)),
