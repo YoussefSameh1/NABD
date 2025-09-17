@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nabd_app/views/home_view.dart';
 
 void main() {
   runApp(const NabdApp());
@@ -9,6 +10,6 @@ class NabdApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(debugShowCheckedModeBanner: false, home: HomeView());
   }
 }
