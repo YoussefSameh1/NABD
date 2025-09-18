@@ -6,11 +6,10 @@ class OnBoardingThree extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff8677C8), // بنفسجي
+      backgroundColor: const Color(0xff8677C8),
       body: SafeArea(
         child: Column(
           children: [
-            // الجزء العلوي (الصورة)
             Expanded(
               flex: 3,
               child: Center(
@@ -22,13 +21,12 @@ class OnBoardingThree extends StatelessWidget {
               ),
             ),
 
-            // الجزء السفلي (النص + البوتون + الدوتس)
             Expanded(
               flex: 2,
               child: Container(
                 width: double.infinity,
                 decoration: const BoxDecoration(
-                  color: Color(0xffD9D9D9), // رمادي فاتح
+                  color: Color(0xffD9D9D9),
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(50),
                     topRight: Radius.circular(50),
@@ -43,16 +41,15 @@ class OnBoardingThree extends StatelessWidget {
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 20,
-                        color: Color(0xff8677C8), // بنفسجي
+                        color: Color(0xff8677C8),
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     const SizedBox(height: 30),
 
-                    // زرار next
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xff5AD2E2), // الأزرق
+                        backgroundColor: const Color(0xff5AD2E2),
                         padding: const EdgeInsets.symmetric(
                           horizontal: 60,
                           vertical: 15,
@@ -61,9 +58,7 @@ class OnBoardingThree extends StatelessWidget {
                           borderRadius: BorderRadius.circular(30),
                         ),
                       ),
-                      onPressed: () {
-                        // هنا اللوجيك بعدين
-                      },
+                      onPressed: () {},
                       child: const Text(
                         "next",
                         style: TextStyle(color: Colors.white, fontSize: 18),
@@ -72,13 +67,12 @@ class OnBoardingThree extends StatelessWidget {
 
                     const SizedBox(height: 35),
 
-                    // الدوتس
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        _buildDot(false, const Color(0xFFFFFFFF)), // أبيض
-                        _buildDot(true, const Color(0xFF5AD2E2)), // أزرق
-                        _buildDot(false, const Color(0xFFDEE0DD)), // رمادي فاتح
+                        _buildDot(false, const Color(0xFFFFFFFF)),
+                        _buildDot(true, const Color(0xFF5AD2E2)),
+                        _buildDot(false, const Color(0xFFDEE0DD)),
                       ],
                     ),
                     const SizedBox(height: 25),

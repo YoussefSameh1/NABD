@@ -9,11 +9,11 @@ class SplashScreenTwo extends StatelessWidget {
       backgroundColor: const Color(0xff8677C8),
       body: SafeArea(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start, // كل العناصر فوق
+          mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const SizedBox(height: 60), // نزول بسيط من فوق
-            // الصورة
+            const SizedBox(height: 60),
+
             Center(
               child: Image.asset(
                 'assests/images/keep pills tracked.png',
@@ -23,7 +23,6 @@ class SplashScreenTwo extends StatelessWidget {
 
             const SizedBox(height: 30),
 
-            // العنوان
             const Text(
               'Keep track',
               style: TextStyle(
@@ -35,15 +34,14 @@ class SplashScreenTwo extends StatelessWidget {
 
             const SizedBox(height: 15),
 
-            // النص التوضيحي
             const Text(
               'of all medications you take',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 18, color: Colors.white),
             ),
 
-            const Spacer(), // يزق البوتون + الدوتس لتحت
-            // زرار Next
+            const Spacer(),
+
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xff4CD6E9),
@@ -55,23 +53,21 @@ class SplashScreenTwo extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                 ),
               ),
-              onPressed: () {
-                // هنا هتحط اللوجيك بعدين
-              },
+              onPressed: () {},
               child: const Text(
                 "next",
                 style: TextStyle(color: Colors.white, fontSize: 18),
               ),
             ),
 
-            const SizedBox(height: 50), // المسافة بين البوتون والدوتس
-            // الـ 3 نقاط (Indicators)
+            const SizedBox(height: 50),
+
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [_buildDot(true), _buildDot(false), _buildDot(false)],
             ),
 
-            const SizedBox(height: 30), // مسافة من تحت
+            const SizedBox(height: 30),
           ],
         ),
       ),
