@@ -1,14 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:nabd_app/addPatient/patient_booking.dart';
+import 'package:nabd_app/addPatient/add_patient_page.dart';
+import 'package:nabd_app/relative_notif.dart';
+import 'package:nabd_app/addPatient/patient_booking.dart';
 
 void main() {
-  runApp(const NabdApp());
+  runApp(const MyApp());
 }
 
-class NabdApp extends StatelessWidget {
-  const NabdApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: MyBooking(),
+    );
   }
 }
