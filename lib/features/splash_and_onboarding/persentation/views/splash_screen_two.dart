@@ -13,7 +13,6 @@ class SplashScreenTwo extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const SizedBox(height: 60),
-
             Center(
               child: Image.asset(
                 'assests/images/keep pills tracked.png',
