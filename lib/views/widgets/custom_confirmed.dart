@@ -64,7 +64,7 @@ class CustomConfirmedCard extends StatelessWidget {
             ],
           ),
           onTap: () {
-            print('done');
+            
           },
         ),
       ),

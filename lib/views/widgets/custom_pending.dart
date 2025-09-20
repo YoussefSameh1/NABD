@@ -64,7 +64,7 @@ class CustomPendingCard extends StatelessWidget {
             ],
           ),
           onTap: () {
-            print('done');
+            
           },
         ),
       ),

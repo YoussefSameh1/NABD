@@ -64,7 +64,7 @@ class CustomMedicineCard extends StatelessWidget {
             ],
           ),
           onTap: () {
-            print('done');
+            
           },
         ),
       ),
