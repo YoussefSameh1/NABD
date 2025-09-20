@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nabd_app/views/test.dart';
+import 'package:nabd_app/features/profile/views/test.dart';
 
 void main() {
   runApp(const NabdApp());

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nabd_app/widgets/profile_section.dart';
-import 'package:nabd_app/widgets/remove_dialog.dart';
+import 'package:nabd_app/features/profile/views/widgets/profile_section.dart';
+import 'package:nabd_app/features/profile/views/widgets/remove_dialog.dart';
 
 class PatientsList extends StatelessWidget {
   const PatientsList({super.key});

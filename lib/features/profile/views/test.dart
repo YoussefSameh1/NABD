@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nabd_app/views/relative_profile_view.dart';
+import 'package:nabd_app/features/profile/views/relative_profile_view.dart';
 
 class Test extends StatelessWidget {
   const Test({super.key});
