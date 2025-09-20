@@ -3,12 +3,6 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:nabd_app/addPatient/checks/no_check.dart';
 import 'package:nabd_app/addPatient/checks/right_check.dart';
 import 'package:nabd_app/medicine_card.dart';
-import 'package:nabd_app_app/medicine_card.dart';
-import 'package:nabd_app_app/addPatient/checks/no_check.dart';
-import 'package:nabd_app_app/addPatient/checks/right_check.dart';
-import 'package:nabd_app_app_app/addPatient/checks/no_check.dart';
-import 'package:nabd_app_app_app/addPatient/checks/right_check.dart';
-import 'package:nabd_app_app_app/medicine_card.dart';
 
 class RelativeNotification extends StatelessWidget {
   const RelativeNotification({super.key});
