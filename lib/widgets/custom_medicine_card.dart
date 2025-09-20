@@ -10,6 +10,7 @@ class CustomMedicineCard extends StatelessWidget {
     required this.icon,
     required this.trailingWidget,
   });
+
   final String time;
   final String title;
   final String subtitle;
@@ -64,7 +65,7 @@ class CustomMedicineCard extends StatelessWidget {
             ],
           ),
           onTap: () {
-            print('done');
+            debugPrint('Medicine card tapped: $title');
           },
         ),
       ),
