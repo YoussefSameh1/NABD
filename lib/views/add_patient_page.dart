@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nabd_app/addPatient/add_bottom.dart';
+import 'package:nabd_app/views/widgets/add_bottom.dart';
 
 
 

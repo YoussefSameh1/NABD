@@ -1,17 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:nabd_app/addPatient/checks/no_check.dart';
-import 'package:nabd_app/addPatient/checks/pending_check.dart';
-import 'package:nabd_app/addPatient/conditions/custom_canceled.dart';
-import 'package:nabd_app/addPatient/conditions/custom_confirmed.dart';
-import 'package:nabd_app/addPatient/conditions/custom_pending.dart';
-import 'package:nabd_app/addPatient/checks/right_check.dart';
-import 'package:nabd_app/addPatient/checks/pending_check.dart';
-import 'package:nabd_app/addPatient/checks/right_check.dart';
-import 'package:nabd_app/addPatient/conditions/custom_canceled.dart';
-import 'package:nabd_app/addPatient/checks/no_check.dart';
-import 'package:nabd_app/addPatient/conditions/custom_confirmed.dart';
-import 'package:nabd_app/addPatient/conditions/custom_pending.dart';
+import 'package:nabd_app/views/widgets/no_check.dart';
+import 'package:nabd_app/views/widgets/pending_check.dart';
+import 'package:nabd_app/views/widgets/right_check.dart';
+import 'package:nabd_app/views/widgets/custom_canceled.dart';
+import 'package:nabd_app/views/widgets/custom_confirmed.dart';
+import 'package:nabd_app/views/widgets/custom_pending.dart';
+
 
 class MyBooking extends StatelessWidget {
   const MyBooking({super.key});
