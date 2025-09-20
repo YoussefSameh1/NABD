@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:nabd_app/constants.dart';
-import 'package:nabd_app/features/profile/views/change_password_view.dart';
-import 'package:nabd_app/features/profile/views/widgets/clicked_text.dart';
-import 'package:nabd_app/features/profile/views/widgets/custom_button.dart';
-import 'package:nabd_app/features/profile/views/widgets/custom_text_field.dart';
+import 'package:nabd_app/features/profile/presentation/views/change_password_view.dart';
+import 'package:nabd_app/features/profile/presentation/views/widgets/clicked_text.dart';
+import 'package:nabd_app/features/profile/presentation/views/widgets/custom_button.dart';
+import 'package:nabd_app/features/profile/presentation/views/widgets/custom_text_field.dart';
 
 class EditProfileViewBody extends StatelessWidget {
   const EditProfileViewBody({super.key});

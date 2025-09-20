@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nabd_app/constants.dart';
-import 'package:nabd_app/features/profile/views/widgets/custom_button.dart';
-import 'package:nabd_app/features/profile/views/widgets/custom_text_field.dart';
+import 'package:nabd_app/features/profile/presentation/views/widgets/custom_button.dart';
+import 'package:nabd_app/features/profile/presentation/views/widgets/custom_text_field.dart';
 
 class ChangePasswordViewBody extends StatelessWidget {
   const ChangePasswordViewBody({super.key});

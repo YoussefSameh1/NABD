@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:nabd_app/constants.dart';
-import 'package:nabd_app/features/profile/views/patients_view.dart';
-import 'package:nabd_app/features/profile/views/widgets/base_profile_view_body.dart';
-import 'package:nabd_app/features/profile/views/widgets/custom_button.dart';
-import 'package:nabd_app/features/profile/views/widgets/profile_section.dart';
+import 'package:nabd_app/features/profile/presentation/views/patients_view.dart';
+import 'package:nabd_app/features/profile/presentation/views/widgets/base_profile_view_body.dart';
+import 'package:nabd_app/features/profile/presentation/views/widgets/custom_button.dart';
+import 'package:nabd_app/features/profile/presentation/views/widgets/profile_section.dart';
 
 class RelativeProfileViewBody extends StatelessWidget {
   const RelativeProfileViewBody({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nabd_app/features/profile/views/edit_profile_view.dart';
-import 'package:nabd_app/features/profile/views/widgets/profile_section.dart';
+import 'package:nabd_app/features/profile/presentation/views/edit_profile_view.dart';
+import 'package:nabd_app/features/profile/presentation/views/widgets/profile_section.dart';
 
 class BaseProfileViewBody extends StatelessWidget {
   const BaseProfileViewBody({super.key});
