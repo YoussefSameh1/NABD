@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:nabd_app/data/medicine_list.dart';
-import 'package:nabd_app/features/map/presntaion/views/my_notifi_view.dart';
+import 'package:nabd_app/features/notifications/presentation/view/my_notifi_view.dart';
 import 'package:nabd_app/features/home/presntation/views/widgets/custom_medicine_card.dart';
 
 class HomePageContent extends StatefulWidget {
@@ -44,15 +44,19 @@ class _HomePageContentState extends State<HomePageContent>
         backgroundColor: const Color(0xff8677C8),
         elevation: 0,
         actions: [
-          IconButton(
-            icon: const Icon(Icons.notifications, color: Colors.white),
-            onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => const MyNotifiView()),
-              );
-            },
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: IconButton(
+              icon: const Icon(Icons.notifications, color: Colors.white, size: 32),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => const MyNotifiView()),
+                );
+              },
+            ),
           ),
         ],
+    automaticallyImplyLeading: false,
       ),
       body: SafeArea(
         top: false,
@@ -80,7 +84,7 @@ class _HomePageContentState extends State<HomePageContent>
                       padding: const EdgeInsets.symmetric(horizontal: 2),
                       child: Center(
                         child: Image.asset(
-                          'assets/set_med.png',
+                          'assets/images/set_med.png',
                           fit: BoxFit.contain,
                         ),
                       ),

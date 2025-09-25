@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lottie/lottie.dart';
-import 'package:nabd_app/core/widgets/custom_addmed_textfield.dart';
+import 'package:nabd_app/core/widgets/custom_text_field.dart';
 import 'package:nabd_app/core/widgets/custom_button.dart';
 import 'package:nabd_app/core/widgets/custom_appbar.dart';
 
@@ -42,7 +42,7 @@ class _AddMedicinePageState extends State<AddMedicinePage>
     return Scaffold(
       resizeToAvoidBottomInset: true,
       backgroundColor: Colors.white,
-      appBar: const CustomAppbar(title: 'Add Medicine'),
+      appBar: CustomAppBar(title: 'Add Medicine', automaticallyImplyLeading: false,),
       body:
           isLoading
               ? Center(
@@ -73,7 +73,6 @@ class _AddMedicinePageState extends State<AddMedicinePage>
                           ),
                           child: IntrinsicHeight(
                             child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
                                 const SizedBox(height: 20),
                                 const Center(
@@ -102,7 +101,7 @@ class _AddMedicinePageState extends State<AddMedicinePage>
                                 CustomButton(
                                   color: const Color(0xff5AD2E2),
                                   text: 'Set Reminder',
-                                  onTap: () {},
+                                  onPressed: () {},
                                 ),
                                 const SizedBox(height: 15),
                               ],

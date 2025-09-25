@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:nabd_app/core/contants/constants.dart';
+import 'package:nabd_app/core/widgets/custom_button.dart';
+import 'package:nabd_app/features/splash_and_onboarding/presentation/views/on_bording_three.dart';
 
 class OnBoardingTwo extends StatelessWidget {
   const OnBoardingTwo({super.key});
@@ -14,7 +17,7 @@ class OnBoardingTwo extends StatelessWidget {
               flex: 3,
               child: Center(
                 child: Image.asset(
-                  'assests/images/FOLLOW UP WITH.png',
+                  'assets/images/follow_up_with.png',
                   height: 345,
                   width: 518,
                 ),
@@ -47,23 +50,18 @@ class OnBoardingTwo extends StatelessWidget {
                     ),
                     const SizedBox(height: 30),
 
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xff5AD2E2),
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 60,
-                          vertical: 15,
-                        ),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30),
-                        ),
-                      ),
-                      onPressed: () {},
-                      child: const Text(
-                        "next",
-                        style: TextStyle(color: Colors.white, fontSize: 18),
-                      ),
-                    ),
+                    CustomButton(
+              text: 'next',
+              color: kSecondaryColor,
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const OnBoardingThree(),
+                  ),
+                );
+              },
+            ),
 
                     const SizedBox(height: 35),
 

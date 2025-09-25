@@ -41,7 +41,7 @@ class _MyNotifiViewState extends State<MyNotifiView>
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: const CustomAppbar(title: 'My Notifications'),
+      appBar:  CustomAppBar(title: 'My Notifications'),
       body:
           isLoading
               ? Center(
@@ -80,7 +80,7 @@ class _MyNotifiViewState extends State<MyNotifiView>
                     child: CustomButton(
                       color: const Color(0xff8677C8),
                       text: 'Set Reminder',
-                      onTap: () {},
+                      onPressed: () {},
                     ),
                   ),
                   SizedBox(height: 60),

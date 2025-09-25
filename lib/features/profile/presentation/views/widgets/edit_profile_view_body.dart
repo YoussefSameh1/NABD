@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:nabd_app/core/contants/constants.dart';
+import 'package:nabd_app/core/widgets/custom_button.dart';
+import 'package:nabd_app/core/widgets/custom_text_field.dart';
 import 'package:nabd_app/features/profile/presentation/views/change_password_view.dart';
 import 'package:nabd_app/features/profile/presentation/views/widgets/clicked_text.dart';
-import 'package:nabd_app/features/profile/presentation/views/widgets/custom_button.dart';
-import 'package:nabd_app/features/profile/presentation/views/widgets/custom_text_field.dart';
 
 class EditProfileViewBody extends StatelessWidget {
   const EditProfileViewBody({super.key});
@@ -15,26 +15,26 @@ class EditProfileViewBody extends StatelessWidget {
         children: [
           SizedBox(height: 80),
           CustomTextField(
-            hint: 'hagar emad',
-            label: 'Name',
+            hintText: 'hagar emad',
+            title: 'Name',
             inputType: TextInputType.name,
           ),
           const SizedBox(height: 20),
           CustomTextField(
-            hint: '01096832103',
-            label: 'Phone Number',
+            hintText: '01096832103',
+            title: 'Phone Number',
             inputType: TextInputType.phone,
           ),
           const SizedBox(height: 20),
           CustomTextField(
-            hint: 'hajarghonim19@gmail',
-            label: 'Email',
+            hintText: 'hajarghonim19@gmail',
+            title: 'Email',
             inputType: TextInputType.emailAddress,
           ),
           const SizedBox(height: 20),
           CustomTextField(
-            hint: '************',
-            label: 'Password',
+            hintText: '************',
+            title: 'Password',
             isobscure: true,
           ),
           const SizedBox(height: 10),

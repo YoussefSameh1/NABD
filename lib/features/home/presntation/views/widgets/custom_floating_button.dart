@@ -20,7 +20,7 @@
 //   }
 // }
 import 'package:flutter/material.dart';
-import 'package:nabd_app/features/add_medicine/presntaion/add_medicine_view.dart';
+import 'package:nabd_app/features/add_medicine/presntaion/views/add_medicine_view.dart';
 
 class CustomFloatingButton extends StatefulWidget {
   const CustomFloatingButton({super.key});

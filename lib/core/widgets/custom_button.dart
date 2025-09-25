@@ -1,42 +1,24 @@
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({
-    super.key,
-    required this.text,
-    this.onTap,
-    required this.color,
-  });
+  const CustomButton({super.key, required this.text, required this.color, this.onPressed});
 
   final String text;
-  final VoidCallback? onTap;
   final Color color;
+  final void Function()? onPressed;
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 84),
-      child: Material(
-        elevation: 4,
-        borderRadius: BorderRadius.circular(40),
-        color: color,
-        child: InkWell(
-          borderRadius: BorderRadius.circular(40),
-          onTap: onTap,
-          child: Container(
-            height: 50,
-            width: double.infinity,
-            alignment: Alignment.center,
-            child: Text(
-              text,
-              style: const TextStyle(
-                fontSize: 16,
-                color: Colors.white,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-          ),
-        ),
+    return ElevatedButton(
+      onPressed: onPressed,
+      style: ElevatedButton.styleFrom(
+        backgroundColor: color,
+        shape: const StadiumBorder(),
+        padding: const EdgeInsets.symmetric(horizontal: 70),
+      ),
+      child: Text(
+        text,
+        style: const TextStyle(color: Colors.white, fontSize: 16),
       ),
     );
   }

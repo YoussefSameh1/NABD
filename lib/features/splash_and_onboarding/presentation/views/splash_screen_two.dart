@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:nabd_app/core/contants/constants.dart';
+import 'package:nabd_app/core/widgets/custom_button.dart';
+import 'package:nabd_app/features/splash_and_onboarding/presentation/views/on_bording_two.dart';
 
 class SplashScreenTwo extends StatelessWidget {
   const SplashScreenTwo({super.key});
@@ -15,7 +18,7 @@ class SplashScreenTwo extends StatelessWidget {
             const SizedBox(height: 60),
             Center(
               child: Image.asset(
-                'assests/images/keep pills tracked.png',
+                'assets/images/keep_pills_tracked.png',
                 height: 250,
               ),
             ),
@@ -41,24 +44,18 @@ class SplashScreenTwo extends StatelessWidget {
 
             const Spacer(),
 
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xff4CD6E9),
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 60,
-                  vertical: 15,
-                ),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(30),
-                ),
-              ),
-              onPressed: () {},
-              child: const Text(
-                "next",
-                style: TextStyle(color: Colors.white, fontSize: 18),
-              ),
+            CustomButton(
+              text: 'next',
+              color: kSecondaryColor,
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const OnBoardingTwo(),
+                  ),
+                );
+              },
             ),
-
             const SizedBox(height: 50),
 
             Row(

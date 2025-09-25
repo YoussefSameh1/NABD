@@ -40,7 +40,7 @@ class _NearbyPharmaciesMapViewState extends State<NearbyPharmaciesMapView>
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: const CustomAppbar(title: 'Nearby Pharmacies'),
+      appBar: CustomAppBar(title: 'Nearby Pharmacies'),
       body:
           isLoading
               ? Center(
@@ -59,7 +59,7 @@ class _NearbyPharmaciesMapViewState extends State<NearbyPharmaciesMapView>
               : Stack(
                 children: [
                   Positioned.fill(
-                    child: Image.asset("assets/map.jpeg", fit: BoxFit.cover),
+                    child: Image.asset("assets/images/map.jpeg", fit: BoxFit.cover),
                   ),
                   Align(
                     alignment: Alignment.bottomCenter,

@@ -10,14 +10,7 @@ class PatientsViewBody extends StatelessWidget {
     return Center(
       child: Column(
         children: [
-          const Text(
-            'Patients',
-            style: TextStyle(
-              fontSize: 30,
-              fontWeight: FontWeight.bold,
-              color: Colors.black,
-            ),
-          ),
+          
           const SizedBox(height: 100),
           Expanded(child: PatientsList()),
           const Spacer(flex: 4),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nabd_app/features/profile/presentation/views/widgets/custom_app_bar.dart';
+import 'package:nabd_app/core/widgets/custom_appbar.dart';
 import 'package:nabd_app/features/profile/presentation/views/widgets/relative_profile_view_body.dart';
 
 class RelativeProfileView extends StatelessWidget {
@@ -8,7 +8,7 @@ class RelativeProfileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(title: 'My Profile'),
+      appBar: CustomAppBar(title: 'My Profile', automaticallyImplyLeading: false),
       body: RelativeProfileViewBody(),
     );
   }

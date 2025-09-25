@@ -1,7 +1,7 @@
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:nabd_app/models/medicine_model.dart';
 import 'package:nabd_app/core/widgets/custom_no.dart';
 import 'package:nabd_app/core/widgets/custom_right_check.dart';
+import 'package:nabd_app/features/add_medicine/data/medicine_model.dart';
 
 final List<Medicine> medicines = [
   Medicine(

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:nabd_app/features/search_medicine/presentaion/nearby_pharmacies_map_view.dart';
-import 'package:nabd_app/core/widgets/custom_addmed_textfield.dart';
 import 'package:nabd_app/core/widgets/custom_appbar.dart';
+import 'package:nabd_app/features/map/presntaion/views/nearby_pharmacies_map_view.dart';
+import 'package:nabd_app/core/widgets/custom_text_field.dart';
 import 'package:nabd_app/core/widgets/custom_search_med_card.dart';
 
 class SearchMedicineView extends StatefulWidget {
@@ -41,7 +41,7 @@ class _SearchMedicineViewState extends State<SearchMedicineView>
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: const CustomAppbar(title: 'Search a Medicine'),
+      appBar: CustomAppBar(title: 'Search a Medicine', automaticallyImplyLeading: false,),
       body:
           isLoading
               ? Center(
