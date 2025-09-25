@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:nabd_app/views/nearby_pharmacies_map_view.dart';
-import 'package:nabd_app/widgets/custom_addmed_textfield.dart';
-import 'package:nabd_app/widgets/custom_appbar.dart';
-import 'package:nabd_app/widgets/custom_search_med_card.dart';
+import 'package:nabd_app/features/search_medicine/presentaion/nearby_pharmacies_map_view.dart';
+import 'package:nabd_app/core/widgets/custom_addmed_textfield.dart';
+import 'package:nabd_app/core/widgets/custom_appbar.dart';
+import 'package:nabd_app/core/widgets/custom_search_med_card.dart';
 
 class SearchMedicineView extends StatefulWidget {
   const SearchMedicineView({super.key});

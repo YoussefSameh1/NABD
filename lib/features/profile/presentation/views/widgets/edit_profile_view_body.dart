@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nabd_app/constants.dart';
+import 'package:nabd_app/core/contants/constants.dart';
 import 'package:nabd_app/features/profile/presentation/views/change_password_view.dart';
 import 'package:nabd_app/features/profile/presentation/views/widgets/clicked_text.dart';
 import 'package:nabd_app/features/profile/presentation/views/widgets/custom_button.dart';
@@ -14,21 +14,46 @@ class EditProfileViewBody extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(height: 80),
-          CustomTextField(hint: 'hagar emad', label: 'Name', inputType: TextInputType.name),
+          CustomTextField(
+            hint: 'hagar emad',
+            label: 'Name',
+            inputType: TextInputType.name,
+          ),
           const SizedBox(height: 20),
-          CustomTextField(hint: '01096832103', label: 'Phone Number', inputType: TextInputType.phone),
+          CustomTextField(
+            hint: '01096832103',
+            label: 'Phone Number',
+            inputType: TextInputType.phone,
+          ),
           const SizedBox(height: 20),
-          CustomTextField(hint: 'hajarghonim19@gmail', label: 'Email', inputType: TextInputType.emailAddress),
+          CustomTextField(
+            hint: 'hajarghonim19@gmail',
+            label: 'Email',
+            inputType: TextInputType.emailAddress,
+          ),
           const SizedBox(height: 20),
-          CustomTextField(hint: '************', label: 'Password', isobscure: true),
+          CustomTextField(
+            hint: '************',
+            label: 'Password',
+            isobscure: true,
+          ),
           const SizedBox(height: 10),
           Padding(
             padding: const EdgeInsets.only(right: 20),
             child: Align(
               alignment: Alignment.centerRight,
-              child: ClickedText(text: 'Change Password', color: kPrimaryColor, onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => ChangePasswordView()));
-              },),
+              child: ClickedText(
+                text: 'Change Password',
+                color: kPrimaryColor,
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ChangePasswordView(),
+                    ),
+                  );
+                },
+              ),
             ),
           ),
           const SizedBox(height: 50),

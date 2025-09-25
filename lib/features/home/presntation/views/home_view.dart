@@ -1,9 +1,9 @@
 import 'package:animated_notch_bottom_bar/animated_notch_bottom_bar/animated_notch_bottom_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:nabd_app/views/page.dart';
-import 'package:nabd_app/widgets/custom_floating_button.dart';
+import 'package:nabd_app/core/contants/page.dart';
+import 'package:nabd_app/features/home/presntation/views/widgets/custom_floating_button.dart';
 
-import '../data/HOME_NAV_itemlist.dart' show homeNavItems;
+import '../../../../core/contants/HOME_NAV_itemlist.dart' show homeNavItems;
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:nabd_app/widgets/custom_appbar.dart';
-import 'package:nabd_app/widgets/custom_map_card.dart';
+import 'package:nabd_app/core/widgets/custom_appbar.dart';
+import 'package:nabd_app/features/map/presntaion/views/widgets/custom_map_card.dart';
 
 class NearbyPharmaciesMapView extends StatefulWidget {
   const NearbyPharmaciesMapView({super.key});

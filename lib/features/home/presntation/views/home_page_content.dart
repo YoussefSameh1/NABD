@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:nabd_app/data/medicine_list.dart';
-import 'package:nabd_app/views/my_notifi_view.dart';
-import 'package:nabd_app/widgets/custom_medicine_card.dart';
+import 'package:nabd_app/features/map/presntaion/views/my_notifi_view.dart';
+import 'package:nabd_app/features/home/presntation/views/widgets/custom_medicine_card.dart';
 
 class HomePageContent extends StatefulWidget {
   const HomePageContent({super.key});

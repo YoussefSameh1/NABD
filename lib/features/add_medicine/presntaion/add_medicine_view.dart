@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lottie/lottie.dart';
-import 'package:nabd_app/widgets/custom_addmed_textfield.dart';
-import 'package:nabd_app/widgets/custom_button.dart';
-import 'package:nabd_app/widgets/custom_appbar.dart';
+import 'package:nabd_app/core/widgets/custom_addmed_textfield.dart';
+import 'package:nabd_app/core/widgets/custom_button.dart';
+import 'package:nabd_app/core/widgets/custom_appbar.dart';
 
 class AddMedicinePage extends StatefulWidget {
   const AddMedicinePage({super.key});

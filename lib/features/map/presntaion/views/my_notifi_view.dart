@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:nabd_app/data/medicine_list.dart';
-import 'package:nabd_app/widgets/custom_appbar.dart';
-import 'package:nabd_app/widgets/custom_button.dart';
-import 'package:nabd_app/widgets/custom_medicine_card.dart';
+import 'package:nabd_app/core/widgets/custom_appbar.dart';
+import 'package:nabd_app/core/widgets/custom_button.dart';
+import 'package:nabd_app/features/home/presntation/views/widgets/custom_medicine_card.dart';
 
 class MyNotifiView extends StatefulWidget {
   const MyNotifiView({super.key});

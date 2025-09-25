@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nabd_app/constants.dart';
+import 'package:nabd_app/core/contants/constants.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({super.key, required this.title});
@@ -23,9 +23,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        iconTheme: const IconThemeData(
-          color: kPrimaryColor,
-        ),
+        iconTheme: const IconThemeData(color: kPrimaryColor),
       ),
     );
   }

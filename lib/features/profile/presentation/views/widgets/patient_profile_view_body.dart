@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nabd_app/constants.dart';
+import 'package:nabd_app/core/contants/constants.dart';
 import 'package:nabd_app/features/profile/presentation/views/widgets/base_profile_view_body.dart';
 import 'package:nabd_app/features/profile/presentation/views/widgets/custom_button.dart';
 import 'package:nabd_app/features/profile/presentation/views/widgets/profile_section.dart';

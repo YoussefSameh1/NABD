@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nabd_app/widgets/custom_book_button.dart';
+import 'package:nabd_app/core/widgets/custom_book_button.dart';
 
 class CustomMapCard extends StatelessWidget {
   const CustomMapCard({super.key});
