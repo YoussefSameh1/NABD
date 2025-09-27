@@ -10,12 +10,12 @@ class PatientProfileViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: const [
+      children: [
         BaseProfileViewBody(),
         SizedBox(height: 40),
         ProfileSection(title: 'My Bookings'),
         SizedBox(height: 150),
-        CustomButton(text: 'Log out', color: kPrimaryColor,),
+        CustomButton(text: 'Log out', color: kPrimaryColor, onPressed: () {}),
       ],
     );
   }

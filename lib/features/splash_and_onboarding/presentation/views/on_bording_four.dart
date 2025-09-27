@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:nabd_app/core/contants/constants.dart';
 import 'package:nabd_app/core/widgets/custom_button.dart';
 import 'package:nabd_app/features/home/presntation/views/home_view.dart';
-import 'package:nabd_app/features/splash_and_onboarding/presentation/views/on_bording_three.dart';
 
 class OnBoardingFour extends StatelessWidget {
   const OnBoardingFour({super.key});

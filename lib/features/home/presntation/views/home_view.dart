@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:nabd_app/core/contants/page.dart';
 import 'package:nabd_app/features/home/presntation/views/widgets/custom_floating_button.dart';
 
-import '../../../../core/contants/HOME_NAV_itemlist.dart' show homeNavItems;
+import '../../../../core/contants/home_nav_item_list.dart' show homeNavItems;
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});

@@ -24,7 +24,7 @@ class RelativeProfileViewBody extends StatelessWidget {
           },
         ),
         const SizedBox(height: 150),
-        CustomButton(text: 'Log out', color: kPrimaryColor),
+        CustomButton(text: 'Log out', color: kPrimaryColor, onPressed: () {}),
       ],
     );
   }
