@@ -9,49 +9,63 @@ class RelativeNotification extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      decoration: const BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(24),
-          topRight: Radius.circular(24),
+    return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: const FaIcon(
+            FontAwesomeIcons.arrowLeft,
+            color: Color(0xff8677C8),
+          ),
+          onPressed: () {
+            Navigator.pop(context);
+          },
         ),
+        title: Text('My Notifications', style: TextStyle(color: Color(0xff8677C8))),
       ),
-      child: ListView(
-        shrinkWrap: true,
-        physics: NeverScrollableScrollPhysics(),
-        padding: EdgeInsets.all(16),
-        children: [
-          CustomMedicineCard(
-            trailingWidget: CustomRightCheck(),
-            title: 'Panadol',
-            time: '8:05 AM',
-            subtitle: '2 capsules',
-            icon: FontAwesomeIcons.capsules,
+      body: Container(
+        width: double.infinity,
+        decoration: const BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(24),
+            topRight: Radius.circular(24),
           ),
-          CustomMedicineCard(
-            trailingWidget: CustomRightCheck(),
-            title: 'Asprin',
-            time: '9:00 AM',
-            subtitle: '2 capsules',
-            icon: FontAwesomeIcons.capsules,
-          ),
-          CustomMedicineCard(
-            trailingWidget: CustomNoCheck(),
-            title: 'Hibiotic',
-            time: '10:00 AM',
-            subtitle: '1 capsules',
-            icon: FontAwesomeIcons.capsules,
-          ),
-          CustomMedicineCard(
-            trailingWidget: CustomNoCheck(),
-            title: 'Comtrex',
-            time: '12:00 PM',
-            subtitle: '1 capsules',
-            icon: FontAwesomeIcons.capsules,
-          ),
-        ],
+        ),
+        child: ListView(
+          shrinkWrap: true,
+          physics: NeverScrollableScrollPhysics(),
+          padding: EdgeInsets.all(16),
+          children: [
+            CustomMedicineCard(
+              trailingWidget: CustomRightCheck(),
+              title: 'Panadol',
+              time: '8:05 AM',
+              subtitle: '2 capsules',
+              icon: FontAwesomeIcons.capsules,
+            ),
+            CustomMedicineCard(
+              trailingWidget: CustomRightCheck(),
+              title: 'Asprin',
+              time: '9:00 AM',
+              subtitle: '2 capsules',
+              icon: FontAwesomeIcons.capsules,
+            ),
+            CustomMedicineCard(
+              trailingWidget: CustomNoCheck(),
+              title: 'Hibiotic',
+              time: '10:00 AM',
+              subtitle: '1 capsules',
+              icon: FontAwesomeIcons.capsules,
+            ),
+            CustomMedicineCard(
+              trailingWidget: CustomNoCheck(),
+              title: 'Comtrex',
+              time: '12:00 PM',
+              subtitle: '1 capsules',
+              icon: FontAwesomeIcons.capsules,
+            ),
+          ],
+        ),
       ),
     );
   }
